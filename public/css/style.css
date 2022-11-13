@@ -297,6 +297,7 @@ button:hover {
     width: 100%;
   }
   .sectionRestaurant__right img {
+    width: 80%;
     display: block;
     position: static;
     margin: auto;
