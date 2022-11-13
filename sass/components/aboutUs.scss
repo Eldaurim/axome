@@ -1,0 +1,71 @@
+.sectionAboutUs {
+  display: flex;
+
+  &__left{
+    width: 50%;
+    margin-right: 127px;
+    margin-bottom: 80px;
+    & img {
+      border-radius: 30px;
+    }
+  }
+
+  &__right {
+    margin-top: 130px;
+    width: 50%;
+
+    &--title{
+      width: 60%;
+      font-size: 32px;
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+
+    &--description{
+      margin-top: 20px;
+      margin-bottom: 30px;
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablette) {
+  .sectionAboutUs {
+    display: block;
+
+    &__left{
+      width: 80%;
+      margin: auto;
+
+      & img {
+        width: 100%;
+        border-radius: 30px;
+      }
+    }
+
+    &__right {
+      margin: auto;
+      width: 80%;
+
+      & .name {
+        margin: 30px 0 20px 0;
+      }
+  
+      &--title{
+        width: 90%;
+        font-size: 32px;
+        margin: 0 0 20px 0;
+      }
+  
+      &--description{
+        margin: 0;
+        width: 100%;
+        margin: 0 0 30px 0;
+      }
+
+      & button{
+        margin: 0 0 60px 0;
+      }
+    }
+  }
+}

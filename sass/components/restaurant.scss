@@ -1,0 +1,135 @@
+.sectionRestaurant{
+  display: flex;
+
+  &__left {
+    width: 50%;
+    position: relative;
+    z-index: 1;
+
+    & .name{
+      margin: 180px 0 30px 0;
+    }
+  }
+
+  &__right {
+    width: 50%;
+
+    & img{
+      position: relative;
+      z-index: 0;
+      right: 150px;
+      bottom: 50px;
+      margin: 100px 0 0 0;
+      box-shadow: -30px 30px 60px $color-shadow;
+      border-radius: 10px;
+      transition: 0.4s;
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  &__title{
+    &--restaurant{
+      margin: 0 0 20px 0;
+      font-size: 54px;
+    }
+  }
+
+  &__description{
+    font-size: 16px;
+    width: 65%;
+    opacity: 70%;
+  }
+
+  &__link{
+    display: flex;
+    align-items: center;
+
+    &--video{
+      display: flex;
+
+      & img{
+        width: 15%;
+      }
+
+      & p{
+        font-weight: bold;
+      }
+    }
+  } 
+}
+
+@media (max-width: $breakpoint-tablette) {
+  .sectionRestaurant{
+    flex-direction: column;
+
+    & #restaurant_one {
+      order: 1;
+    }
+
+    & #restaurant_two {
+      order: -1;
+    }
+
+    &__left {
+      width: 80%;
+      position: static;
+      margin: auto;
+
+      & .name{
+        margin: 30px 0 20px 0;
+      }
+    }
+
+    &__right {
+      width: 100%;
+  
+      & img{
+        display: block;
+        position: static;
+        margin: auto;
+        box-shadow: none;
+        border-radius: 10px;
+  
+        &:hover {
+          transform: none;
+        }
+      }
+    }
+
+    &__title{
+      &--restaurant{
+        font-size: 36px;
+      }
+    }
+
+    &__description{
+      width: 100%;
+    }
+
+    &__link{
+      margin: 0 0 60px 0;
+      
+      & button{
+        width: 50%;
+        padding: 18px 20px;
+      }
+
+      &--video{
+        display: flex;
+        width: 50%;
+        margin: auto;
+  
+        & img{
+          width: 40px;
+        }
+  
+        & p{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

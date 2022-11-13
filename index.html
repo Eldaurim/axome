@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name=description content="Axome, the best restaurant in the city. A tasty good experience">
+  <link rel="stylesheet" href="public/css/style.css">
+  <title>AXOME</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header class="content">
+    <a id="openBtn">
+      <img src="/ressources/svg/burger.svg" alt="navigation menu" width="100" height="100">
+    </a>
+    <img src="/ressources/svg/logo-axome.svg" alt="axome" width="100" height="100">
+    <nav id="nav_menu" class="sidenav">
+      <ul>
+        <li id="closeBtn"><a href=""><img src="./ressources/svg/cross-close.svg" alt="Close navigation menu">Close
+            Menu</a></li>
+        <li class="actif"><a href="">Home</a></li>
+        <li><a href="#sectionAboutUs">About</a></li>
+        <li><a href="#sectionBestMenu">Gallery</a></li>
+        <li><a href="">Testimonial</a></li>
+      </ul>
+      <button type="button">Contact</button>
+    </nav>
+  </header>
+
+  <section class="sectionRestaurant content">
+    <div class="sectionRestaurant__left" id="restaurant_one">
+      <p class="name">Restaurant</p>
+      <h1 class="sectionRestaurant__title--restaurant">Enjoy a good experience at our restaurant</h1>
+      <p class="sectionRestaurant__description">We make other people enjoy and give happiness in our restaurant. Come
+        here and
+        relax
+        with your family and loved
+        ones.</p>
+      <div class="sectionRestaurant__link">
+        <button type="button">Best Menu</button>
+        <div class="sectionRestaurant__link--video">
+          <img src="ressources/svg/video.svg" alt="restaurant video button">
+          <p>See Videos</p>
+        </div>
+      </div>
+    </div>
+    <div class="sectionRestaurant__right" id="restaurant_two">
+      <img src="ressources/img/header.jpg" alt="Tomato mozzarella salad">
+    </div>
+  </section>
+
+  <div class="scroll content">
+    <a href="#sectionAboutUs">
+      <img src="./ressources/svg/nav-arrow-down.svg" alt="Scroll down">
+      <p>Scroll for more</p>
+    </a>
+  </div>
+
+  <section class="sectionAboutUs content" id="sectionAboutUs">
+    <div class="sectionAboutUs__left">
+      <img src="ressources/img/about-us.jpg" alt="Board of cheese and meat and salad">
+    </div>
+    <div class="sectionAboutUs__right">
+      <p class="name">About US</p>
+      <h1 class="sectionAboutUs__right--title">The Best restaurant in the city</h1>
+      <p class="sectionAboutUs__right--description">We are a restaurant that is open to anyone. We are the intermediary
+        medium
+        when it comes to food. Do not worry,
+        here it is very easy to find a variety of foods. With very modern facilities you can enjoy it sparingly.</p>
+      <button type="button">Find Out More</button>
+    </div>
+  </section>
+
+  <section class="sectionBestMenu" id="sectionBestMenu">
+    <div class="container">
+      <div class="sectionBestMenu__title">
+        <p class="name">Best Menu</p>
+        <h1>Best food menu in restaurant</h1>
+      </div>
+
+      <div class="cardSection swiper" id="cardSection">
+        <div class="swiper-wrapper">
+          <div class="card swiper-slide card-left">
+            <div class="card__img">
+              <img src="ressources/img/article-1.jpg" alt="fresh salad plate">
+            </div>
+            <div class="card__description">
+              <h2>Fresh Salad</h2>
+              <p class="description">New food and concent interest. best food menuin the city,people....</p>
+              <p class="readMore">Read more</p>
+            </div>
+          </div>
+          <div class="card swiper-slide card-center">
+            <div class="card__img">
+              <img src="ressources/img/article-2.jpg" alt="fruit salad plate">
+            </div>
+            <div class="card__description">
+              <h2>Fruits Salad</h2>
+              <p class="description">New food and concent interest. best food menuin the city,peo....</p>
+              <p class="readMore">Read more</p>
+            </div>
+          </div>
+          <div class="card swiper-slide card-right">
+            <div class="card__img">
+              <img src="ressources/img/article-3.jpg" alt="Soft mix salad plate">
+            </div>
+            <div class="card__description">
+              <h2>Soft mix Salad</h2>
+              <p class="description">New food and concent interest. best food meu...</p>
+              <p class="readMore">Read more</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"><img src="./ressources/svg/nav-arrow-left.svg" alt="Next slide"></div>
+        <div class="swiper-button-next"><img src="./ressources/svg/nav-arrow-left.svg" alt="Previous slide"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="content">
+    <div class="footer__cat">
+      <p>Get’s your discount</p>
+      <ul>
+        <li><a href="">Check now !</a></li>
+      </ul>
+    </div>
+    <div class="footer__cat">
+      <p>Our services</p>
+      <ul>
+        <li><a href="">Collection</a></li>
+        <li><a href="">How its work</a></li>
+        <li><a href="">Estimats</a></li>
+      </ul>
+    </div>
+    <div class="footer__cat">
+      <p>Company</p>
+      <ul>
+        <li><a href="">Terms of use</a></li>
+        <li><a href="">Privacy policy</a></li>
+        <li><a href="">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer__cat">
+      <p>Contact</p>
+      <ul>
+        <li><a href="mailto:dev@axome.com">dev@axome.com</a></li>
+        <li><a href="tel:+888-315-500">(888) 315-500</a></li>
+        <li><a target="_blank" href="http://maps.google.com/?q=St.+VIllage,+New+York">St. VIllage, New York</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="JS/nav.js"></script>
+  <script type="module" src="JS/swiper.js"></script>
+  <script src="JS/footer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
