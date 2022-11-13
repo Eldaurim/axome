@@ -241,8 +241,9 @@ button:hover {
 .sectionRestaurant__right img {
   position: relative;
   z-index: 0;
-  right: 150px;
-  bottom: 50px;
+  right: 120px;
+  bottom: 0px;
+  width: 120%;
   margin: 100px 0 0 0;
   box-shadow: -30px 30px 60px rgba(70, 70, 70, 0.5098039216);
   border-radius: 10px;
@@ -351,9 +352,6 @@ button:hover {
 }
 .sectionBestMenu .cardSection {
   display: flex;
-}
-.sectionBestMenu .cardSection .card-center {
-  margin: 0 20px;
 }
 .sectionBestMenu a:hover {
   cursor: pointer;
